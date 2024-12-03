@@ -15,10 +15,7 @@ model = joblib.load(model_path)
 scaler = joblib.load(scaler_path)
 
 # Selected features (from the notebook)
-# selected_features = ['rank', 'subscribers', 'video_views_rank', 'video_views_for_the_last_30_days', 'lowest_monthly_earnings', 'highest_monthly_earnings', 'lowest_yearly_earnings', 'highest_yearly_earnings', 'views_per_upload']  # Replace with your features
-
-selected_features = ['rank', 'subscribers', 'video_views_for_the_last_30_days', 'lowest_monthly_earnings', 'highest_monthly_earnings', 'lowest_yearly_earnings', 'highest_yearly_earnings', 'views_per_upload']  # Replace with your features
-
+selected_features = ['rank', 'subscribers', 'video_views_rank', 'video_views_for_the_last_30_days', 'lowest_monthly_earnings', 'highest_monthly_earnings', 'lowest_yearly_earnings', 'highest_yearly_earnings', 'views_per_upload']  # Replace with your features
 
 @app.route('/')
 def index():
