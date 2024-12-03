@@ -1,0 +1,88 @@
+body {
+    font-family: 'Pixelated MS Sans Serif', monospace;
+    background-image: url('/static/bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ffd700;
+    font-family: 'Pixelated MS Sans Serif', monospace;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 0px #0071c5;
+    position: relative;
+    animation: pixel-shake 0.5s infinite alternate;
+}
+
+@keyframes pixel-shake {
+    0% { transform: translate(-1px, -1px); }
+    100% { transform: translate(1px, 1px); }
+}
+
+.form-box {
+    backdrop-filter: blur(5px);
+    border: 2px solid #0071c5;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: red;
+    font-weight: 700;
+}
+
+input {
+    font-family: 'Pixelated MS Sans Serif', monospace;
+    padding: 8px 12px;
+    border: 2px solid #0071c5;
+    background-color: transparent;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: 14px;
+    width: calc(100% - 24px);
+}
+
+input:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 113, 197, 0.5);
+}
+
+button {
+    font-family: 'Pixelated MS Sans Serif', monospace;
+    font-weight: 700;
+    background-color: #0071c5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #ffd700;
+    color: #0071c5;
+}
