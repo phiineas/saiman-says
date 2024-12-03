@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Interface</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Predict YouTube Video Views</h1>
+    <form method="POST" action="/predict">
+        {% for feature in features %}
+        <label for="{{ feature }}">{{ feature }}:</label>
+        <input type="number" step="any" name="{{ feature }}" required>
+        <br>
+        {% endfor %}
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

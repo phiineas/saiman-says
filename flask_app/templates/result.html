@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p><strong>Predicted Views:</strong> {{ prediction }}</p>
+
+    <h2>Feature Importance</h2>
+    <ul>
+        {% for feature, importance in importances.items() %}
+        <li>{{ feature }}: {{ importance }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Make Another Prediction</a>
+</body>
+</html>
