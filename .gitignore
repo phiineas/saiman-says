@@ -1,3 +1,5 @@
 .venv
 *.pkl
 flask_app/model/
+model
+*.pkl
