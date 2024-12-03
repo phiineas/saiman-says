@@ -15,16 +15,16 @@
             <p class="prediction">{{ prediction }}</p>
         </div>
         
-        <div class="feature-importance">
+        <!-- <div class="feature-importance">
             <h2>Feature Impact</h2>
             <ul>
                 {% for feature, importance in importances.items() %}
                 <li>{{ feature }}: {{ importance }}</li>
                 {% endfor %}
             </ul>
-        </div>
+        </div> -->
         
-        <a href="/" class="button">Make Another Prediction</a>
+        <a href="/predict" class="button">Make Another Prediction</a>
     </div>
 </body>
 </html>

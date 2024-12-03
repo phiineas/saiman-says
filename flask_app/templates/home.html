@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Flex Slider</title>
+  <link rel="stylesheet" href="../static/home_style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-slide home">
+          <h2 class="flex-title" data-flip="Welcome">nether it is</h2>
+          <p class="flex-about"  onclick="redirectToIndex()">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <script>
+            function redirectToIndex() {
+                window.location.href = "/predict";
+            }
+          </script>
+
+        </div>
+        <div class="flex-slide about">
+          <h2 class="flex-title" data-flip="More Info">cant afford obsidian</h2>
+          <p class="flex-about">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="flex-slide work">
+          <h2 class="flex-title" data-flip="Projects">magma</h2>
+          <p class="flex-about">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="flex-slide contact">
+          <h2 class="flex-title" data-flip="Reach Us">give potion</h2>
+          <p class="flex-about">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+</body>
+</html>
